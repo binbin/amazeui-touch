@@ -2,6 +2,7 @@ import React, {
   PropTypes,
 } from 'react';
 import cx from 'classnames';
+import {component as componentPropType} from './InternalPropTypes';
 import ClassNameMixin from './mixins/ClassNameMixin';
 
 import '../scss/components/_grid.scss';
@@ -11,7 +12,7 @@ const Col = React.createClass({
 
   propTypes: {
     classPrefix: PropTypes.string.isRequired,
-    component: PropTypes.node.isRequired,
+    component: componentPropType.isRequired,
     cols: PropTypes.number,
     offset: PropTypes.number,
     shrink: PropTypes.bool,
