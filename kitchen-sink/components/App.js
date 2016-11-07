@@ -21,7 +21,7 @@ const App = React.createClass({
         <Container
           transition={transition}
         >
-          {React.cloneElement(children, {key: location.key})}
+          {React.cloneElement(children, {key: location.pathname})}
         </Container>
 
         <TabBar
