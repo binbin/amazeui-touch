@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'react-router/lib/Link';
 import {
   Container,
   Group,
@@ -34,7 +35,14 @@ const ButtonExample = React.createClass({
           header="块级显示"
         >
           <Button block>Default Block</Button>
-          <Button amStyle="primary" block>Primary Block</Button>
+          <Button
+            amStyle="primary"
+            block
+            component={Link}
+            to="/"
+          >
+            Primary Block
+          </Button>
         </Group>
 
         <Group

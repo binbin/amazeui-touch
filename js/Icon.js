@@ -2,6 +2,7 @@ import React, {
   PropTypes,
 } from 'react';
 import cx from 'classnames';
+import {component} from './InternalPropTypes';
 import ClassNameMixin from './mixins/ClassNameMixin';
 
 import '../scss/components/_icon.scss';
@@ -11,7 +12,7 @@ const Icon = React.createClass({
 
   propTypes: {
     classPrefix: PropTypes.string.isRequired,
-    component: PropTypes.node.isRequired,
+    component: component,
     name: PropTypes.string.isRequired,
     href: PropTypes.string,
     // amStyle: PropTypes.string,

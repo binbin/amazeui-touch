@@ -2,6 +2,7 @@ import React, {
   PropTypes,
 } from 'react';
 import cx from 'classnames';
+import {component} from './InternalPropTypes';
 import ClassNameMixin from './mixins/ClassNameMixin';
 
 import '../scss/components/_button.scss';
@@ -11,7 +12,7 @@ const Button = React.createClass({
 
   propTypes: {
     classPrefix: PropTypes.string.isRequired,
-    component: PropTypes.node,
+    component: component,
     href: PropTypes.string,
     target: PropTypes.string,
     amStyle: PropTypes.string,
