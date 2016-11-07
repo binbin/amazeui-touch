@@ -82,6 +82,7 @@ const ModalExample = React.createClass({
           onClosed={this.onClosed}
           onAction={this.handleAction}
           {...this.props.modalProps}
+          closeViaBackdrop={true}
         >
           {this.getModalRole() !== 'loading' && this.props.children}
         </Modal>

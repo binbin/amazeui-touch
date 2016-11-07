@@ -176,6 +176,7 @@ const Modal = createClass({
     delete props.confirmText;
     delete props.cancelText;
     delete props.closeBtn;
+    delete props.closeViaBackdrop;
 
     return props;
   },
