@@ -1,6 +1,6 @@
 /** Amaze UI Touch v1.0.0 | by Amaze UI Team
   * (c) 2017 AllMobilize, Inc., Licensed under MIT
-  * 2017-09-11T14:04:46+0800
+  * 2017-09-11T15:56:53+0800
   */
   /* Amaze UI Touch Base Styles */
 [class*="animation-"] {
@@ -2034,7 +2034,7 @@ hr {
   font-family: iconfont;
   font-weight: normal;
   font-style: normal;
-  src: url("iconfont.woff") format("woff"), url("iconfont.ttf") format("truetype"), url("iconfont.svg#iconfont") format("svg");;
+  src: url("fonts/iconfont.woff") format("woff"), url("fonts/iconfont.ttf") format("truetype"), url("fonts/iconfont.svg#iconfont") format("svg");;
 }
 
 .icon {

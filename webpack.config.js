@@ -1,5 +1,7 @@
 import path from 'path';
 
+var CopyWebpackPlugin = require('copy-webpack-plugin');
+
 export default {
   output: {
     library: 'AMUITouch',
@@ -47,5 +49,5 @@ export default {
         }
       },
     ]
-  },
+  }
 };

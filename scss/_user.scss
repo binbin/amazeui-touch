@@ -10,9 +10,9 @@ $icon-fonts: (
    style: normal,
    // font path
    src: unquote(
-       'url("iconfont.woff") format("woff"),
-       url("iconfont.ttf") format("truetype"),
-       url("iconfont.svg#iconfont") format("svg");'
+       'url("fonts/iconfont.woff") format("woff"),
+       url("fonts/iconfont.ttf") format("truetype"),
+       url("fonts/iconfont.svg#iconfont") format("svg");'
    )
  ),
 );

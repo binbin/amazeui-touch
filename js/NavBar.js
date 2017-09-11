@@ -74,6 +74,7 @@ const NavBar = React.createClass({
       isClone,
       // href,
       className,
+      iconStyle,
       ...otherProps,
     } = item;
     let children = [];
@@ -116,6 +117,7 @@ const NavBar = React.createClass({
         className={cx(iconClassName)}
         name={icon}
         key={navIconKey}
+        style={iconStyle}
       />
     ) : null;
 

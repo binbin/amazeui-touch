@@ -1,6 +1,6 @@
 /** Amaze UI Touch v1.0.0 | by Amaze UI Team
   * (c) 2017 AllMobilize, Inc., Licensed under MIT
-  * 2017-09-11T14:04:46+0800
+  * 2017-09-11T15:56:53+0800
   */
   (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
@@ -3805,7 +3805,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	        icon = item.icon,
 	        isClone = item.isClone,
 	        className = item.className,
-	        otherProps = _objectWithoutProperties(item, ['component', 'title', 'customIcon', 'icon', 'isClone', 'className']);
+	        iconStyle = item.iconStyle,
+	        otherProps = _objectWithoutProperties(item, ['component', 'title', 'customIcon', 'icon', 'isClone', 'className', 'iconStyle']);
 
 	    var children = [];
 	    var itemClassName = (0, _classnames2.default)(this.prefixClass('nav-item'), className);
@@ -3837,7 +3838,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	    }) : icon ? _react2.default.createElement(_Icon2.default, {
 	      className: (0, _classnames2.default)(iconClassName),
 	      name: icon,
-	      key: navIconKey
+	      key: navIconKey,
+	      style: iconStyle
 	    }) : null;
 
 	    // adjust title and icon order for Android UC
