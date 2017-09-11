@@ -1,6 +1,6 @@
 /** Amaze UI Touch v1.0.0 | by Amaze UI Team
-  * (c) 2016 AllMobilize, Inc., Licensed under MIT
-  * 2016-08-18T15:15:02+0800
+  * (c) 2017 AllMobilize, Inc., Licensed under MIT
+  * 2017-09-11T13:42:32+0800
   */
   /* Amaze UI Touch Base Styles */
 [class*="animation-"] {
@@ -566,7 +566,6 @@ html {
   outline: none;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
   -webkit-touch-callout: none;
-  background: -webkit-linear-gradient(top, transparent, transparent);
   background: linear-gradient(to bottom, transparent, transparent);
 }
 
@@ -622,7 +621,6 @@ th {
 
 .fade {
   opacity: 0;
-  -webkit-transition: opacity .2s linear;
   transition: opacity .2s linear;
 }
 
@@ -650,7 +648,6 @@ tbody.collapse.in {
   position: relative;
   height: 0;
   overflow: hidden;
-  -webkit-transition: height .3s ease;
   transition: height .3s ease;
 }
 
@@ -1196,7 +1193,7 @@ hr {
 
 .container-fill > .container-fill {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 0;
+      -ms-flex: 1 1 0px;
           flex: 1 1 0;
   position: relative;
 }
@@ -1218,7 +1215,7 @@ hr {
 .container-column > .container-fill,
 .container-row > .container-fill {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 0;
+      -ms-flex: 1 1 0px;
           flex: 1 1 0;
   position: relative;
 }
@@ -1246,14 +1243,12 @@ hr {
 .container-align-end {
   -webkit-box-align: end;
       -ms-flex-align: end;
-              -ms-grid-row-align: flex-end;
           align-items: flex-end;
 }
 
 .container-align-center {
   -webkit-box-align: center;
       -ms-flex-align: center;
-              -ms-grid-row-align: center;
           align-items: center;
 }
 
@@ -1264,7 +1259,6 @@ hr {
 .container-align-start {
   -webkit-box-align: start;
       -ms-flex-align: start;
-              -ms-grid-row-align: flex-start;
           align-items: flex-start;
 }
 
@@ -1718,7 +1712,6 @@ hr {
   cursor: pointer;
   -webkit-appearance: none;
   -webkit-font-smoothing: antialiased;
-  -webkit-transition: .25s ease-out;
   transition: .25s ease-out;
   vertical-align: middle;
   padding: 0.75em 1em;
@@ -2038,15 +2031,15 @@ hr {
 }
 
 @font-face {
-  font-family: Ratchicons;
+  font-family: iconfont;
   font-weight: normal;
   font-style: normal;
-  src: url("fonts/ratchicons.woff2") format("woff2"), url("fonts/ratchicons.woff") format("woff"), url("fonts/ratchicons.ttf") format("truetype");;
+  src: url("iconfont.woff") format("woff"), url("iconfont.ttf") format("truetype"), url("iconfont.svg#iconfont") format("svg");;
 }
 
 .icon {
   display: inline-block;
-  font-family: Ratchicons, sans-serif;
+  font-family: iconfont, sans-serif;
   font-size: 24px;
   line-height: 1;
   text-decoration: none;
@@ -2058,164 +2051,16 @@ hr {
   font-size: inherit;
 }
 
-.icon-back:before {
-  content: "\e80a";
+.icon-shebaoka:before {
+  content: "&#xe62f;";
 }
 
-.icon-bars:before {
-  content: "\e80e";
+.icon-shebaoju:before {
+  content: "&#xe659;";
 }
 
-.icon-caret:before {
-  content: "\e80f";
-}
-
-.icon-check:before {
-  content: "\e810";
-}
-
-.icon-close:before {
-  content: "\e811";
-}
-
-.icon-code:before {
-  content: "\e812";
-}
-
-.icon-compose:before {
-  content: "\e813";
-}
-
-.icon-download:before {
-  content: "\e815";
-}
-
-.icon-edit:before {
-  content: "\e829";
-}
-
-.icon-forward:before {
-  content: "\e82a";
-}
-
-.icon-gear:before {
-  content: "\e821";
-}
-
-.icon-home:before {
-  content: "\e82b";
-}
-
-.icon-info:before {
-  content: "\e82c";
-}
-
-.icon-list:before {
-  content: "\e823";
-}
-
-.icon-more-vertical:before {
-  content: "\e82e";
-}
-
-.icon-more:before {
-  content: "\e82f";
-}
-
-.icon-pages:before {
-  content: "\e824";
-}
-
-.icon-pause:before {
-  content: "\e830";
-}
-
-.icon-person:before {
-  content: "\e832";
-}
-
-.icon-play:before {
-  content: "\e816";
-}
-
-.icon-plus:before {
-  content: "\e817";
-}
-
-.icon-refresh:before {
-  content: "\e825";
-}
-
-.icon-search:before {
-  content: "\e819";
-}
-
-.icon-share:before {
-  content: "\e81a";
-}
-
-.icon-sound:before {
-  content: "\e827";
-}
-
-.icon-sound2:before {
-  content: "\e828";
-}
-
-.icon-sound3:before {
-  content: "\e80b";
-}
-
-.icon-sound4:before {
-  content: "\e80c";
-}
-
-.icon-star-filled:before {
-  content: "\e81b";
-}
-
-.icon-star:before {
-  content: "\e81c";
-}
-
-.icon-stop:before {
-  content: "\e81d";
-}
-
-.icon-trash:before {
-  content: "\e81e";
-}
-
-.icon-up-nav:before {
-  content: "\e81f";
-}
-
-.icon-up:before {
-  content: "\e80d";
-}
-
-.icon-right-nav:before {
-  content: "\e818";
-}
-
-.icon-right:before {
-  content: "\e826";
-}
-
-.icon-down-nav:before {
-  content: "\e814";
-}
-
-.icon-down:before {
-  content: "\e820";
-}
-
-.icon-left-nav:before {
-  content: "\e82d";
-}
-
-.icon-left:before {
-  content: "\e822 ";
+.icon-yanglaobaoxian:before {
+  content: "&#xe6e8;";
 }
 
 input[type="text"],
@@ -2248,7 +2093,6 @@ textarea {
   font-size: 1rem;
   -webkit-font-smoothing: antialiased;
   vertical-align: middle;
-  -webkit-transition: border .15s;
   transition: border .15s;
 }
 
@@ -2413,8 +2257,10 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-flow: row nowrap;
-      flex-flow: row nowrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
@@ -2581,7 +2427,6 @@ output {
 .card-cover.card-header {
   -webkit-box-align: end;
       -ms-flex-align: end;
-              -ms-grid-row-align: flex-end;
           align-items: flex-end;
 }
 
@@ -2660,7 +2505,6 @@ output {
   color: rgba(136, 136, 136, 0.45);
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
-  -webkit-transition: -webkit-transform .3s;
   transition: -webkit-transform .3s;
   transition: transform .3s;
   transition: transform .3s, -webkit-transform .3s;
@@ -3141,7 +2985,6 @@ output {
 .modal-transition-appear-active.modal-actions, .modal-transition-appear-active.popup {
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
-  -webkit-transition: -webkit-transform 0.3s linear;
   transition: -webkit-transform 0.3s linear;
   transition: transform 0.3s linear;
   transition: transform 0.3s linear, -webkit-transform 0.3s linear;
@@ -3775,7 +3618,6 @@ output {
 }
 
 .with-offcanvas-left .offcanvas-push-target, .with-offcanvas-right .offcanvas-push-target, .with-offcanvas-closing .offcanvas-push-target {
-  -webkit-transition: -webkit-transform 0.4s ease-in-out;
   transition: -webkit-transform 0.4s ease-in-out;
   transition: transform 0.4s ease-in-out;
   transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
@@ -3954,7 +3796,6 @@ output {
 .slider-slides > li {
   position: relative;
   display: none;
-  -webkit-transition: -webkit-transform 0.5s ease-in-out;
   transition: -webkit-transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
@@ -4076,7 +3917,6 @@ output {
           flex: 1;
   opacity: 0.75;
   cursor: pointer;
-  -webkit-transition: opacity 0.5s;
   transition: opacity 0.5s;
 }
 
@@ -4106,6 +3946,7 @@ output {
   overflow: hidden;
   vertical-align: middle;
   -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
       align-self: center;
   outline: none;
   cursor: pointer;
@@ -4156,7 +3997,6 @@ output {
   width: 3.25rem;
   height: 1.875rem;
   border-radius: 9999px;
-  -webkit-transition: background .35s;
   transition: background .35s;
 }
 
@@ -4164,7 +4004,6 @@ output {
   position: absolute;
   display: block;
   content: " ";
-  -webkit-transition: all .35s;
   transition: all .35s;
   border-radius: 9999px;
 }
@@ -4368,7 +4207,6 @@ output {
   width: 100%;
   padding: 0.9375rem;
   visibility: hidden;
-  -webkit-transition: -webkit-transform 0.3s;
   transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
   transition: transform 0.3s, -webkit-transform 0.3s;
@@ -4796,6 +4634,7 @@ output {
 
 .align-v .align-center {
   -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
       align-self: center;
 }
 
@@ -4843,7 +4682,7 @@ output {
 .views {
   position: relative;
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 0;
+      -ms-flex: 1 1 0px;
           flex: 1 1 0;
   width: 100%;
   height: 100%;
@@ -4871,7 +4710,7 @@ output {
 
 .view > .container {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 0;
+      -ms-flex: 1 1 0px;
           flex: 1 1 0;
 }
 

@@ -3,22 +3,23 @@
 
 // Custom font icon
 // -----------------------------------------------------------------------------
-//$icon-fonts: (
-//  // font-family
-//  YourFont: (
-//    weight: normal,
-//    style: normal,
-//    // font path
-//    src: unquote(
-//        'url("yourfont.woff") format("woff"),
-//        url("yourfont.ttf") format("truetype"),
-//        url("yourfont.svg#svgFontName") format("svg");'
-//    )
-//  ),
-//);
+$icon-fonts: (
+ // font-family
+ iconfont: (
+   weight: normal,
+   style: normal,
+   // font path
+   src: unquote(
+       'url("iconfont.woff") format("woff"),
+       url("iconfont.ttf") format("truetype"),
+       url("iconfont.svg#iconfont") format("svg");'
+   )
+ ),
+);
 //
 //// icon name-unicode map
-//$icons: (
-//  back: \e80a,
-//  bars: \e80e,
-//);
+$icons: (
+ shebaoka: '&#xe62f;',
+ shebaoju: '&#xe659;',
+ yanglaobaoxian:'&#xe6e8;'
+);
