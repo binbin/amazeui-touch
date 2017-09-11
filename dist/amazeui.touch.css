@@ -1,6 +1,6 @@
 /** Amaze UI Touch v1.0.0 | by Amaze UI Team
   * (c) 2017 AllMobilize, Inc., Licensed under MIT
-  * 2017-09-11T13:59:14+0800
+  * 2017-09-11T14:04:46+0800
   */
   /* Amaze UI Touch Base Styles */
 [class*="animation-"] {
@@ -2052,15 +2052,15 @@ hr {
 }
 
 .icon-shebaoka:before {
-  content: "#xe62f";
+  content: "\e62f";
 }
 
 .icon-shebaoju:before {
-  content: "#xe659";
+  content: "\e659";
 }
 
 .icon-yanglaobaoxian:before {
-  content: "#xe6e8";
+  content: "\e6e8 ";
 }
 
 input[type="text"],
